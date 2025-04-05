@@ -1,0 +1,11 @@
+loans:
+  build:
+    version: 1.0
+  toCreateLoan: true
+  message: "welcome to loans related prod APIs"
+  contactDetails:
+    name: "kalayan.c"
+    email: "kalayan.c@gmail.com"
+  onCallSupport:
+    - (555) 6234-7654
+    - (888) 8768-6027

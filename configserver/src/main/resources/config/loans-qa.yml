@@ -1,0 +1,11 @@
+loans:
+  build:
+    version: 2.0
+  toCreateLoan: true
+  message: "welcome to loans related QA APIs"
+  contactDetails:
+    name: "dundi.c"
+    email: "dundi.c@gmail.com"
+  onCallSupport:
+    - (444) 6234-8765
+    - (222) 7783-0987

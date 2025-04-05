@@ -1,0 +1,12 @@
+accounts:
+  build:
+    version: 3.0
+  toCreateLoan: true
+  message: "welcome to accounts related local APIs"
+  contactDetails:
+    name: "ramesh.c"
+    email: "ramesh.c@gmail.com"
+  onCallSupport:
+    - (777) 6234-8236
+    - (888) 7783-6327
+
