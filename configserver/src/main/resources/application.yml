@@ -1,11 +1,21 @@
+# better to use the git repo for the configuration because to find out the latest changes
 spring:
   application:
     name: "configserver"
   profiles:
-    active: native
+    # active: native # we will use the native profile for files and classpath
+    active: git
   cloud:
-    server:
-      native:
-        search-locations: classpath:/config
+    config:
+      server:
+        #native:
+          # search-locations: "classpath:/config"
+          #search-locations: "file:///Users//dundiramesh//Downloads//config"
+        git:
+          uri: "https://github.com/DundiRamesh/configurations.git"
+          default-label: main
+          timeout: 5 # here 5 indicates the 5 sec that is our config server will try to connect to the git repo for 5sec then it will throw an error
+          clone-on-start: true # this will clone the repo when the config server starts
+          force-pull: true # this will force the config server to pull the latest changes from the git repo
 server:
   port: 8071
